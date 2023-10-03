@@ -219,7 +219,7 @@ def generate_random_file_name(target_name):
     current_date = datetime.now()
     start_date = datetime(2013, 6, 1)
     random_date = start_date + timedelta(days=random.randint(0, (current_date - start_date).days))
-    username = random.choice(["Max", "Roxanne", "Charity", "Tyler", "Mia", "Sidney", "Nyla", "James", "Elvie"])
+    username = random.choice(["Prophet", "Beetle", "Spartan"])
     return f"{target_name}_{random_date.strftime('%Y%m%d')}_{username}.txt"
 
 
@@ -323,26 +323,34 @@ def process_user_choice(choice):
 def login_screen():
     # Users and their credentials
     users = {
-        "NOX": "12345",
-        "SUPERGIRL": "12345",
-        "PROPHET": "12345"
+        "BEETLE": "3536556",
+        "SPARTAN": "346567",
+        "PROPHET": "952345",
     }
 
-    # Capture user input
-    print("Enter Credentials.")
-    print("-----------------------------")
-    username = input("Username: ")
-    password = getpass.getpass("Password: ")
+    max_attempts = 3
+    attempts = 0
 
-    # Check credentials
-    if username in users and users[username] == password:
-        print(f"ACCESS GRANTED - Welcome {username.upper()}")
-        time.sleep(2)
-        os.system('cls' if os.name == 'nt' else 'clear')
-        display_welcome_message()
-    else:
-        print("Invalid username or password. Access denied.")
 
+    while attempts < max_attempts:
+        # Capture user input
+        print("Enter Credentials.")
+        print("-----------------------------")
+        username = input("Username: ")
+        password = getpass.getpass("Password: ")
+
+        # Check credentials
+        if username in users and users[username] == password:
+            print(f"ACCESS GRANTED - Welcome {username.upper()}")
+            time.sleep(2)
+            os.system('cls' if os.name == 'nt' else 'clear')
+            display_welcome_message()
+        else:
+            print("Invalid username or password. Access denied.")
+            attempts += 1
+
+    print("Maximum login attempts reached. Exiting.")
+    exit()
 
 def main():
     login_screen()
