@@ -1,32 +1,35 @@
-Rogue (Network Operations Simulation)
+# 🌐 Rogue: Network Operations Simulation 🛠️
 
-This Python script simulates various network operations, including network scanning, password cracking, and security-related tasks. It's intended for educational purposes to showcase simulated processes in cybersecurity.
+Welcome to Rogue, a Python-powered adventure that dives into the world of network operations, including network scanning, password cracking, and a variety of security-related tasks. It's an educational tool designed to showcase simulated cybersecurity processes for those curious minds eager to learn! 🎓🔐
 
-Features
-Simulated network scanning within a specified radius.
-Password cracking simulation for a given IP address.
-John the Ripper simulation for password hash cracking.
-Distributed Denial of Service (DDoS) attack simulation.
-Data exfiltration simulation.
-System bypass simulation.
-Phone tracking simulation.
-Security camera hacking simulation.
-Oracle operations simulation, including case file investigation.
-Usage
-Download the Latest Release:
+## 🌟 Features 🌟
+Rogue comes loaded with a plethora of simulated features for you to explore:
 
-Go to the Releases page.
-Download the latest package (network_operations_simulation_latest.zip).
-Extract the Package and double click the exe to get started.
+- Network scanning within a specified radius.
+- Password cracking simulation for a specific IP address.
+- John the Ripper simulation for hash cracking.
+- Distributed Denial of Service (DDoS) attack simulation.
+- Data exfiltration simulation.
+- System bypass simulation.
+- Phone tracking simulation.
+- Security camera hacking simulation.
+- Oracle operations simulation, including case file investigation.
 
-There are 3 built in logins to use
+## 🚀 Usage 🚀
 
-"BEETLE": "3536556",
-"SPARTAN": "346567",
-"PROPHET": "952345",
+**Getting Started**:
 
-Follow the prompts to choose and simulate a network operation.
+1. Visit the Releases page.
+2. Download the latest package (`network_operations_simulation_latest.zip`).
+3. Extract the Package and double-click the exe to embark on your adventure.
 
-License
-This project is licensed under the MIT License.
+**Built-in Logins:**
 
+- "BEETLE": "3536556"
+- "SPARTAN": "346567"
+- "PROPHET": "952345"
+
+Follow the prompts to select and simulate a network operation. Are you ready for a thrilling cybersecurity journey? 🕵️‍♂️💻
+
+## 📜 License 📜
+This exciting project is licensed under the MIT License. Feel free to dive in and explore! 🌟
