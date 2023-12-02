@@ -20,7 +20,7 @@ Rogue comes loaded with a plethora of simulated features for you to explore:
 **Getting Started**:
 
 1. Visit the Releases page.
-2. Download the latest package (`network_operations_simulation_latest.zip`).
+2. Download the latest package (`ROGUE.exe`).
 3. Extract the Package and double-click the exe to embark on your adventure.
 
 **Built-in Logins:**
