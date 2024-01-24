@@ -6,6 +6,7 @@ import time
 from datetime import datetime, timedelta
 
 import colorama
+logged_in = False
 
 
 def simulate_network_scanning(radius):
@@ -321,6 +322,7 @@ def process_user_choice(choice):
 
 
 def login_screen():
+    logged_in = False
     # Users and their credentials
     users = {
         "BEETLE": "3536556",
@@ -332,7 +334,7 @@ def login_screen():
     attempts = 0
 
 
-    while attempts < max_attempts:
+    while attempts < max_attempts and logged_in != True:
         # Capture user input
         print("Enter Credentials.")
         print("-----------------------------")
@@ -341,6 +343,7 @@ def login_screen():
 
         # Check credentials
         if username in users and users[username] == password:
+            logged_in = True
             print(f"ACCESS GRANTED - Welcome {username.upper()}")
             time.sleep(2)
             os.system('cls' if os.name == 'nt' else 'clear')
@@ -348,16 +351,17 @@ def login_screen():
         else:
             print("Invalid username or password. Access denied.")
             attempts += 1
-
-    print("Maximum login attempts reached. Exiting.")
-    exit()
+    if logged_in != True:
+        print("Maximum login attempts reached. Exiting.")
+        exit()
 
 def main():
     login_screen()
     while True:
-        choice = input("Enter your choice: ")
-        process_user_choice(choice)
-        print("\n")
+            choice = input("Enter your choice: ")
+            process_user_choice(choice)
+            print("\n")
+
 
 
 if __name__ == "__main__":
